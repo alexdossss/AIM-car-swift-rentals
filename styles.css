@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-container{
+    background-color: grey;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+.header-container .inner-header-container{
+    width: 20em;
+    display: flex;
+    justify-content: space-around;
+}
+.header-container .inner-header-container a{
+    color: black;
+    text-decoration: none;
+}
