@@ -81,7 +81,12 @@
     
             if ($user_email) {
                 $subject = "Car Rental Booking " . ucfirst($action);
-                $message = "Your booking has been $action by the admin.";
+                $message = "Your booking has been $action by the admin.\n
+                            Car Info:
+                            \n
+                            Brand: $brand\n
+                            Model: $model\n
+                            Year: $year";
                 $headers = "From: noreply@aimswift.com";
     
                 if (!mail($user_email, $subject, $message, $headers)) {
