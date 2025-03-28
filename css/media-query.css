@@ -1,0 +1,1314 @@
+/* ========== DESKTOP =========== */
+
+/* For large screens and desktops (1440px - 1201px) */
+@media (max-width: 1441px) {
+
+    /* NAVBAR ADJUSTMENTS */
+    .navbar {
+        margin-left: 50px;
+    }
+
+    .navbar-logo img {
+        height: 200px;
+    }
+
+    .navbar-links {
+        gap: 50px;
+    }
+
+    /* lOGIN FORM */
+    .login-page {
+        background-image: url('../uploads/login-1440px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .login-form-container {
+        width: 50%;
+        padding: 30px 100px;
+    }
+
+    .login-email-input,
+    .login-password-input {
+        max-width: 400px;
+    }
+
+    .login-button {
+        max-width: 400px;
+    }
+
+    .forgot-password-link {
+        max-width: 400px;
+        padding-right: 12px;
+    }
+
+    /* SIGNUP PAGE */
+    .signup-page {
+        background-image: url('../uploads/signup-1440px.svg');
+    }
+
+    .forgotpassword-page {
+        background-image: url('../uploads/forgot-password-1440px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .forgot-password-form-container {
+        width: 50%;
+        padding: 30px 100px;
+        max-width: 320px;
+    }
+
+    .forgot-password-input,
+    .forgot-password-button {
+        max-width: 320px;
+    }
+
+    .forgot-password-additional-link {
+        max-width: 320px;
+    }
+
+    .success-message {
+        max-width: 320px;
+    }
+
+    /* RESET PASSWORD PAGE */
+    .resetpassword-page {
+        background-image: url('../uploads/reset-password-1440px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    /* BROWSE OR DASHBOARD ADMIN */
+    .car-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .car-info h3 {
+        font-size: 20px !important;
+    }
+
+    .user-car-card {
+        max-width: 320px;
+    }
+
+    .user-car-card img {
+        height: 160px;
+    }
+
+    .booked-cars-wrapper {
+        width: 100%;
+    }
+
+    .booked-cars-table {
+        width: 90%;
+    }
+
+    .booked-cars-header th,
+    .booked-cars-data {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .booked-cars-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+/* For smaller laptops (1200px - 1025px) */
+@media (max-width: 1200px) {
+
+    /* NAVBAR ADJUSTMENTS */
+    .navbar {
+        margin-left: 30px;
+    }
+
+    .navbar-logo img {
+        height: 180px;
+    }
+
+    .navbar-links {
+        padding-left: 0;
+        gap: 30px;
+    }
+
+    /* lOGIN FORM */
+    .login-page {
+        background-image: url('../uploads/login-1200px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .login-form-container {
+        width: 50%;
+        padding: 30px 50px;
+    }
+
+    .login-email-input,
+    .login-password-input {
+        font-size: 1em;
+        padding: 12px;
+        max-width: 350px;
+    }
+
+    .login-button {
+        font-size: 1.2em;
+        padding: 14px;
+        max-width: 350px;
+    }
+
+    .forgot-password-link {
+        max-width: 350px;
+        padding-right: 12px;
+    }
+
+    /* SIGNUP PAGE */
+    .signup-page {
+        background-image: url('../uploads/signup-1200px.svg');
+    }
+
+    /* FORGOT PASSWORD PAGE */
+    .forgotpassword-page {
+        background-image: url('../uploads/forgot-password-1200px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .forgot-password-form-container {
+        width: 50%;
+        padding: 30px 50px;
+    }
+
+    .forgot-password-input {
+        font-size: 1em;
+        padding: 12px;
+        max-width: 350px;
+    }
+
+    .forgot-password-button {
+        font-size: 1.2em;
+        padding: 14px;
+        max-width: 350px;
+    }
+
+    .forgot-password-additional-link {
+        max-width: 350px;
+        padding-right: 12px;
+    }
+
+    .success-message {
+        max-width: 350px;
+        margin: 10px auto 0;
+    }
+
+    /* RESET PASSWORD PAGE */
+    .resetpassword-page {
+        background-image: url('../uploads/reset-password-1200px.svg');
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    /* BROWSE OR DASHBOARD ADMIN */
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-car-card {
+        width: 100%;
+    }
+
+    /* REMOVE CAR GRID */
+    .remove-car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* EDIT CAR */
+    .edit-cars-header {
+        font-size: 16px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .edit-cars-data {
+        font-size: 14px;
+        padding: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .edit-cars-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .edit-cars-image {
+        width: 100px;
+    }
+
+    /* BOOKED CARS */
+    .booked-cars-wrapper {
+        width: 100%;
+    }
+
+    .booked-cars-table {
+        width: 95%;
+    }
+
+    .booked-cars-header th,
+    .booked-cars-data {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .booked-cars-data td {
+        font-size: 12px;
+    }
+
+    .booked-cars-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .booked-cars-table tr:last-child td {
+        font-size: 12px;
+    }
+
+    /* BOOKING FILL UP PAGE */
+
+    .booking-table th {
+        font-size: 14px;
+    }
+
+    .booking-table td {
+        font-size: 11px;
+    }
+
+}
+
+/* ========== TABLETS =========== */
+/* For tablets (portrait orientation) (1024px - 769px) */
+@media (max-width: 1024px) {
+    .header-container {
+        display: none !important;
+    }
+
+    .mobile-header {
+        display: block !important;
+        width: 100%;
+    }
+
+    .sidebar-navigation-drawer-main {
+        width: 40%;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #121212;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        font-size: 32px;
+        padding: 15px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    /* HIDE LOGO ON MOBILE */
+    .navbar-logo {
+        display: none;
+    }
+
+    .login-page {
+        background-image: url('../uploads/login-870px.svg');
+    }
+
+    .signup-page {
+        background-image: url('../uploads/signup-870px.svg');
+    }
+
+    /* =================HOME PAGE===================== */
+
+
+    .inner-header-container .nav-links, .auth-links{
+        display: none;
+    }
+
+    .logo{
+        margin: auto;
+        margin-top: -40px;
+    }
+
+    .banner {
+        width: 500px auto!important; 
+        height: 400px !important;
+    }
+
+    .banner-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px !important;
+    }
+
+    .book-now-btn{
+        font-size: 12px !important;
+    }
+
+    .car-card{
+        width: 200px !important;
+        height: 350px;
+    }    
+
+    .testimonials h3{
+        font-size: 27px;
+    }
+
+    .testimonials h2{
+        font-size: 39px;
+    }
+
+    .testimonials p{
+        font-size: 19px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* HOW IT WORKS */
+    .steps-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 0 auto; 
+    }
+
+    .step {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+        min-width: 100%; 
+        padding: 20px 15px;
+    }
+
+    .step-image {
+        width: 100px; 
+    }
+
+    .step-title {
+        font-size: 1.8em; 
+    }
+
+    .step-description {
+        font-size: 1.1em;
+    }
+
+    /* FOOTER  */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-heading {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .footer-description {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .car-grid {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .user-car-card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 400px;
+        margin: 0;
+    }
+
+    .category-title {
+        text-align: center;
+    }
+
+    /* Car Details */
+    .car-details-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+
+    .car-title{
+        text-align: center;
+    }
+
+    .car-rating {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .car-price {
+        text-align: center;
+    }
+
+    .car-features {
+        justify-items: center;
+        align-items: center;
+    }
+
+    .car-details-wrapper {
+        flex-direction: column;
+        max-width: none;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-details-image img {
+        max-width: 100%;
+    }
+
+    .car-details-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .book-btn {
+        display: block;
+        margin: 0 auto; 
+        width: 80%; 
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .car-category h3 {
+        text-align: center;
+    }
+
+    /* EDIT CAR PAGE */
+
+    .edit-cars-container {
+        width: 95%;
+        padding: 30px 15px;
+    }
+
+    .edit-cars-title {
+        font-size: 1.8em;
+    }
+
+    .edit-cars-table {
+        font-size: 12px;
+    }
+
+    .edit-cars-header {
+        font-size: 14px;
+    }
+
+    .edit-cars-image {
+        width: 90px;  
+    }
+
+    .edit-cars-back-btn {
+        font-size: 16px;
+    }
+
+    .edit-cars-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .edit-cars-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+}
+
+/* ========== MOBILE =========== */
+
+/* For small devices like mobile in landscape (768px - 481px) */
+@media (max-width: 768px) {
+
+    .login-page {
+        background-image: url('../uploads/white.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-form-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .login-email-input,
+    .login-password-input,
+    .login-button {
+        max-width: 100%;
+    }
+
+    .forgot-password-link {
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        color: black;
+    }
+
+    .login-text-container {
+        display: block;
+        position: fixed;
+        top: 200px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+        text-align: center;
+    }
+
+    .signup-page {
+        justify-content: center;
+        background-image: url('../uploads/white.svg');
+    }
+
+    .signup-form-container {
+        width: 80%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .signup-input,
+    .signup-button {
+        max-width: 100%;
+    }
+
+    .forgotpassword-page {
+        justify-content: center;
+        background-image: url('../uploads/white.svg');
+    }
+
+    .forgot-password-form-container {
+        width: 80%;
+        float: none;
+        padding: 30px 20px;
+    }
+
+    .forgot-password-input,
+    .forgot-password-button {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .forgot-password-button {
+        font-size: 1.1em;
+        padding: 14px;
+    }
+
+    .resetpassword-page {
+        justify-content: center;
+        background-image: url('../uploads/white.svg');
+    }
+
+    .reset-password-form-container {
+        width: 80%;
+        float: none;
+        padding: 30px 20px;
+    }
+
+    .reset-password-input,
+    .reset-password-button {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .reset-password-button {
+        font-size: 1.1em;
+        padding: 14px;
+    }
+
+    .account-email {
+        font-size: 1em;
+    }
+
+    .header-container {
+        display: none !important;
+    }
+
+    .mobile-header {
+        display: block !important;
+        width: 100%;
+    }
+
+    /* BANNER SECTION */
+    .banner {
+        height: 60vh;
+        background-image: url('../uploads/banner-768px.svg');
+    }
+
+    .banner-content {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* CAR SECTION */
+    .cars-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 90%;
+    }
+
+    .car-name {
+        font-size: 1.1em;
+    }
+
+    .star {
+        width: 80px;
+        height: 20px;
+    }
+
+    /* TESTIMONIALS SECTION */
+    .testimonials {
+        padding: 30px 15px;
+    }
+
+    .testimonials-header {
+        font-size: 1.8em;
+    }
+
+    .testimonials-subheader {
+        font-size: 2.5em;
+    }
+
+    .testimonial-text {
+        font-size: 1.3em;
+    }
+
+    .how-it-works {
+        padding: 50px 20px;
+    }
+
+    .how-it-works-subheader {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .step {
+        width: 80%;
+        max-width: 400px;
+        padding: 25px 20px;
+    }
+
+    .step-title {
+        font-size: 1.5em;
+    }
+
+    .car-grid {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .user-car-card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 400px;
+        margin: 0;
+    }
+
+    .category-title h3 {
+        text-align: center;
+    }
+
+    /* CONTACT PAGE */
+    .contact-container {
+        padding: 30px 15px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px;
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .contact-info-wrapper,
+    .contact-form-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .map-container {
+        margin-top: 30px;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+
+    /* ABOUT CONTAINER */
+    .about-container {
+        padding: 30px 5%;
+    }
+
+    /* ABOUT CONTENT */
+    .about-content {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    /* TEXT SECTION */
+    .about-text {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.7;
+        width: 100%;
+        max-width: 100%;
+        word-wrap: break-word; 
+    }
+
+    /* LOGO/IMAGE SECTION */
+    .about-logo {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* WHY CHOOSE US SECTION */
+    .why-choose {
+        padding: 30px 5%;
+    }
+
+    .choose-list {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-item {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        padding: 10px 0;
+        margin: 8px 0;
+        list-style-type: none;
+    }
+
+    .choose-item::before {
+        content: "•";
+        color: #F4C340;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-right: 0.5em;
+    }
+
+    /* COMMITMENT SECTION */
+    .commitment p {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .pending-rent-container {
+        width: 80%;
+    }
+
+    .pending-rent-container h1 {
+        font-size: 2em;
+    }
+
+    .pending-rent-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .pending-rent-table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    .pending-rent-table th,
+    .pending-rent-table td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .pending-rent-table th {
+        font-size: 14px;
+    }
+
+    .cancel-btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    /* CAR DETAILS */
+    .car-details-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+
+    .car-details-wrapper {
+        flex-direction: column;
+        max-width: none;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-details-image img {
+        max-width: 100%;
+    }
+
+    .car-details-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* BOOKING FILL UP */
+    .booking-wrapper {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .car-display {
+        margin-bottom: 15px;
+    }
+
+    .reservation-panel {
+        max-width: 100%;
+        padding: 20px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .booking-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .car-specs {
+        font-size: 16px;
+    }
+
+    .cost-summary p {
+        font-size: 16px;
+    }
+
+    .date-selection label,
+    .date-selection input {
+        font-size: 16px;
+    }
+
+    .book-car {
+        font-size: 16px;
+    }
+
+    .car-image-container img {
+        max-width: 100%;
+    }
+
+    .car-category h3 {
+        text-align: center;
+    }
+
+    /* EDIT CAR */
+    .edit-cars-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .edit-cars-table th,
+    .edit-cars-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .edit-cars-header {
+        font-size: 16px;
+    }
+
+    .edit-cars-row:nth-child(even) {
+        background-color: #121212;
+    }
+
+    .edit-cars-image {
+        width: 100px;
+    }
+
+    .edit-cars-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .edit-cars-action {
+        padding: 8px;
+    }
+
+    .booking-requests-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .booking-table-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .booking-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .booking-table {
+        min-width: 600px;
+    }
+
+    .booking-table th,
+    .booking-table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .car-thumbnail {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .approve-btn,
+    .reject-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .action-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .no-bookings-msg {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .booked-cars-container {
+        padding: 10px;
+    }
+
+    .booked-cars-title {
+        font-size: 2em;
+    }
+
+    .booked-cars-wrapper {
+        flex-direction: column;
+        overflow-x: auto;
+    }
+
+    .booked-cars-table {
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .booked-cars-header {
+        font-size: 14px;
+    }
+
+    .booked-cars-data {
+        padding: 6px;
+    }
+
+    .booked-cars-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-description {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .footer-heading {
+        font-size: 22px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column.contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-address,
+    .footer-email,
+    .footer-phone {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-form {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-address {
+        font-size: 1em;
+        line-height: 1.5;
+        width: 40%;
+    }
+
+    .footer-input,
+    .footer-button {
+        font-size: 14px;
+        padding: 10px;
+        width: 70%;
+    }
+
+}
+
+/* For very small devices like mobile in portrait (480px and below) */
+@media (max-width: 480px) {
+
+    .sidebar-navigation-drawer-main {
+        width: 60%;
+    }
+
+    /* BANNER SECTION */
+    .banner {
+        height: 60vh;
+        background-image: url('uploads/banner-480px-smaller.svg');
+    }
+
+    .how-it-works {
+        padding: 40px 15px;
+    }
+
+    .how-it-works-header {
+        font-size: 1.5em;
+    }
+
+    .how-it-works-subheader {
+        font-size: 1.75em;
+        margin-bottom: 30px;
+    }
+
+    .steps-container {
+        gap: 30px;
+    }
+
+    .step {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .step-image {
+        width: 100px;
+    }
+
+    .step-title {
+        font-size: 1.3em;
+    }
+
+    .step-description {
+        font-size: 1em;
+    }
+
+
+    .site-footer {
+        padding: 15px 0;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+
+    .footer-column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-form {
+        max-width: 100%;
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer-input,
+    .footer-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 375px) { /* IPHONE SE ONLY */
+    .login-text-container {
+        top: 150px; 
+        font-size: 1.5em; 
+    }
+}
