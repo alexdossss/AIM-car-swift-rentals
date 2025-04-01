@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     'created_at' => $created_at
                 ])) {
                     $subject = "Verify Your Email";
-                    $verification_link = "http://localhost/aim_swift_car_rentals/verify_email.php?token=$verification_token";
+                    $verification_link = "http://localhost:9090/verify_email.php?token=$verification_token";
                     $messageContent = "Hi $full_name,\n\nPlease verify your email by clicking the link below:\n\n$verification_link\n\nIf you didn't request this, you can ignore this email.";
 
                     $headers = "From: no-reply@carRental.com\r\n";

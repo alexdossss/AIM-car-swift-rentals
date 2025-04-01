@@ -34,7 +34,7 @@ $bodyClass = in_array($currentPage, $noHeaderPages) ? '' : 'admin-body-with-head
             </nav>
 
             <div class="admin-auth">
-                <a href="/aim_swift_car_rentals/logout.php" onclick="return confirm('Are you sure you want to log out?')">LOGOUT</a>
+                <a href="/logout.php" onclick="return confirm('Are you sure you want to log out?')">LOGOUT</a>
             </div>
         </div>
     </header>

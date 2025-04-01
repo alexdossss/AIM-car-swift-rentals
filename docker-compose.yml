@@ -10,8 +10,15 @@ services:
     volumes:
       - .:/var/www/html
       - ./php.ini:/usr/local/etc/php/php.ini
+      - ./msmtprc:/etc/msmtprc
     depends_on:
       - mysql-db
+      - mailhog
+    environment:
+      - MAIL_HOST=mailhog
+      - MAIL_PORT=1025
+    networks:
+      - app-network
 
   mysql-db:
     image: mysql:8.0
@@ -28,6 +35,8 @@ services:
       - mysql_data:/var/lib/mysql
       - ./db-init:/docker-entrypoint-initdb.d
       - ./mysql-custom.cnf:/etc/mysql/conf.d/mysql-custom.cnf
+    networks:
+      - app-network
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -44,6 +53,22 @@ services:
       MEMORY_LIMIT: 256M
     ports:
       - "9091:80"
+    networks:
+      - app-network
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog
+    restart: always
+    ports:
+      - "1025:1025" # SMTP server
+      - "8025:8025" # Web UI
+    networks:
+      - app-network
 
 volumes:
   mysql_data:
+
+networks:
+  app-network: # Define a custom network
+    driver: bridge

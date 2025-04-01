@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $insertToken->execute();
 
                 $full_name = $user["full_name"];
-                $reset_link = "http://localhost/aim_swift_car_rentals/confirm_password_reset.php?token=$verification_token";
+                $reset_link = "http://localhost:9090/confirm_password_reset.php?token=$verification_token";
                 $subject = "Password Reset Request";
                 $message = "Hi $full_name,\n\nIt looks like you requested a password reset. Click the link below to reset your password:\n\n$reset_link\n\nIf you didn't request this, you can ignore this email.";
 

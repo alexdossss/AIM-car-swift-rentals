@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = $user['email'];
     $subject = "Confirm Your Car Rental Booking";
     $message = "Hello {$user['full_name']},\n\nClick the link below to confirm your car booking:\n\n"
-             . "http://localhost/aim_swift_car_rentals/confirm_booking.php?user_id=$user_id&car_id=$car_id";
+             . "http://localhost:9090/confirm_booking.php?user_id=$user_id&car_id=$car_id";
     $headers = "From: noreply@aimswift.com";
 
     mail($to, $subject, $message, $headers);

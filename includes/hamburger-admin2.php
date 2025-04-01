@@ -40,7 +40,7 @@ if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'admin') {
             <li><a href="edit_car.php">Edit Car</a></li>
             <li><a href="notifications_booking_req.php">Booking Requests</a></li>
             <li><a href="booked_cars.php">Booked Cars</a></li>
-            <li><a href="/aim_swift_car_rentals/logout.php" onclick="return confirm('Are you sure you want to log out?')">Logout</a></li>
+            <li><a href="/logout.php" onclick="return confirm('Are you sure you want to log out?')">Logout</a></li>
         </ul>
     </nav>
 
