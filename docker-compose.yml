@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  aim-car-swift-rentals:
+    build: .
+    container_name: aim-car-swift-rentals-container
+    restart: always
+    ports:
+      - "9090:80"
+    volumes:
+      - .:/var/www/html
+      - ./php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: car_rental
+      MYSQL_USER: aim-admin
+      MYSQL_PASSWORD: aim-password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db-init:/docker-entrypoint-initdb.d
+      - ./mysql-custom.cnf:/etc/mysql/conf.d/mysql-custom.cnf
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-container
+    restart: always
+    depends_on:
+      - mysql-db
+    environment:
+      PMA_HOST: mysql-db
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 128M
+      MAX_EXECUTION_TIME: 300
+      MEMORY_LIMIT: 256M
+    ports:
+      - "9091:80"
+
+volumes:
+  mysql_data:

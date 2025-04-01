@@ -4,9 +4,9 @@
     }
      
 
-    $db_server = "localhost";
-    $db_user = "root";
-    $db_pass = "";
+    $db_server = "mysql-db";
+    $db_user = "aim-admin";
+    $db_pass = "aim-password";
     $db_name = "car_rental";
 
     try {
